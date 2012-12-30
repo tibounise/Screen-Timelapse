@@ -1,0 +1,297 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DC4AA09B16905EE500B13F33 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC4AA09A16905EE400B13F33 /* Cocoa.framework */; };
+		DC4AA0A516905EE500B13F33 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DC4AA0A316905EE500B13F33 /* InfoPlist.strings */; };
+		DC4AA0A716905EE500B13F33 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DC4AA0A616905EE500B13F33 /* main.m */; };
+		DC4AA0AB16905EE500B13F33 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = DC4AA0A916905EE500B13F33 /* Credits.rtf */; };
+		DC4AA0AE16905EE500B13F33 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DC4AA0AD16905EE500B13F33 /* AppDelegate.m */; };
+		DC4AA0B116905EE500B13F33 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = DC4AA0AF16905EE500B13F33 /* MainMenu.xib */; };
+		DC4AA0B816909EB700B13F33 /* 1356905357_18222.icns in Resources */ = {isa = PBXBuildFile; fileRef = DC4AA0B716909EB700B13F33 /* 1356905357_18222.icns */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		DC4AA09616905EE400B13F33 /* Screen Timelapse.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Screen Timelapse.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DC4AA09A16905EE400B13F33 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		DC4AA09D16905EE500B13F33 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		DC4AA09E16905EE500B13F33 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		DC4AA09F16905EE500B13F33 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		DC4AA0A216905EE500B13F33 /* Screen Timelapse-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Screen Timelapse-Info.plist"; sourceTree = "<group>"; };
+		DC4AA0A416905EE500B13F33 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		DC4AA0A616905EE500B13F33 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		DC4AA0A816905EE500B13F33 /* Screen Timelapse-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Screen Timelapse-Prefix.pch"; sourceTree = "<group>"; };
+		DC4AA0AA16905EE500B13F33 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		DC4AA0AC16905EE500B13F33 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		DC4AA0AD16905EE500B13F33 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		DC4AA0B016905EE500B13F33 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		DC4AA0B716909EB700B13F33 /* 1356905357_18222.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = 1356905357_18222.icns; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DC4AA09316905EE400B13F33 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC4AA09B16905EE500B13F33 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DC4AA08B16905EE400B13F33 = {
+			isa = PBXGroup;
+			children = (
+				DC4AA0B716909EB700B13F33 /* 1356905357_18222.icns */,
+				DC4AA0A016905EE500B13F33 /* Screen Timelapse */,
+				DC4AA09916905EE400B13F33 /* Frameworks */,
+				DC4AA09716905EE400B13F33 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DC4AA09716905EE400B13F33 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DC4AA09616905EE400B13F33 /* Screen Timelapse.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DC4AA09916905EE400B13F33 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DC4AA09A16905EE400B13F33 /* Cocoa.framework */,
+				DC4AA09C16905EE500B13F33 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DC4AA09C16905EE500B13F33 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DC4AA09D16905EE500B13F33 /* AppKit.framework */,
+				DC4AA09E16905EE500B13F33 /* CoreData.framework */,
+				DC4AA09F16905EE500B13F33 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		DC4AA0A016905EE500B13F33 /* Screen Timelapse */ = {
+			isa = PBXGroup;
+			children = (
+				DC4AA0AC16905EE500B13F33 /* AppDelegate.h */,
+				DC4AA0AD16905EE500B13F33 /* AppDelegate.m */,
+				DC4AA0AF16905EE500B13F33 /* MainMenu.xib */,
+				DC4AA0A116905EE500B13F33 /* Supporting Files */,
+			);
+			path = "Screen Timelapse";
+			sourceTree = "<group>";
+		};
+		DC4AA0A116905EE500B13F33 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DC4AA0A216905EE500B13F33 /* Screen Timelapse-Info.plist */,
+				DC4AA0A316905EE500B13F33 /* InfoPlist.strings */,
+				DC4AA0A616905EE500B13F33 /* main.m */,
+				DC4AA0A816905EE500B13F33 /* Screen Timelapse-Prefix.pch */,
+				DC4AA0A916905EE500B13F33 /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DC4AA09516905EE400B13F33 /* Screen Timelapse */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DC4AA0B416905EE500B13F33 /* Build configuration list for PBXNativeTarget "Screen Timelapse" */;
+			buildPhases = (
+				DC4AA09216905EE400B13F33 /* Sources */,
+				DC4AA09316905EE400B13F33 /* Frameworks */,
+				DC4AA09416905EE400B13F33 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Screen Timelapse";
+			productName = "Screen Timelapse";
+			productReference = DC4AA09616905EE400B13F33 /* Screen Timelapse.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DC4AA08D16905EE400B13F33 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+			};
+			buildConfigurationList = DC4AA09016905EE400B13F33 /* Build configuration list for PBXProject "Screen Timelapse" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = DC4AA08B16905EE400B13F33;
+			productRefGroup = DC4AA09716905EE400B13F33 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DC4AA09516905EE400B13F33 /* Screen Timelapse */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DC4AA09416905EE400B13F33 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC4AA0A516905EE500B13F33 /* InfoPlist.strings in Resources */,
+				DC4AA0AB16905EE500B13F33 /* Credits.rtf in Resources */,
+				DC4AA0B116905EE500B13F33 /* MainMenu.xib in Resources */,
+				DC4AA0B816909EB700B13F33 /* 1356905357_18222.icns in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DC4AA09216905EE400B13F33 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC4AA0A716905EE500B13F33 /* main.m in Sources */,
+				DC4AA0AE16905EE500B13F33 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		DC4AA0A316905EE500B13F33 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DC4AA0A416905EE500B13F33 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		DC4AA0A916905EE500B13F33 /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DC4AA0AA16905EE500B13F33 /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		DC4AA0AF16905EE500B13F33 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DC4AA0B016905EE500B13F33 /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DC4AA0B216905EE500B13F33 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		DC4AA0B316905EE500B13F33 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		DC4AA0B516905EE500B13F33 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Screen Timelapse/Screen Timelapse-Prefix.pch";
+				INFOPLIST_FILE = "Screen Timelapse/Screen Timelapse-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		DC4AA0B616905EE500B13F33 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Screen Timelapse/Screen Timelapse-Prefix.pch";
+				INFOPLIST_FILE = "Screen Timelapse/Screen Timelapse-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DC4AA09016905EE400B13F33 /* Build configuration list for PBXProject "Screen Timelapse" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DC4AA0B216905EE500B13F33 /* Debug */,
+				DC4AA0B316905EE500B13F33 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DC4AA0B416905EE500B13F33 /* Build configuration list for PBXNativeTarget "Screen Timelapse" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DC4AA0B516905EE500B13F33 /* Debug */,
+				DC4AA0B616905EE500B13F33 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DC4AA08D16905EE400B13F33 /* Project object */;
+}
