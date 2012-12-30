@@ -3,7 +3,7 @@
 //  Screen Timelapse
 //
 //  Created by TiBounise on 30/12/12.
-//  Copyright (c) 2012 __MyCompanyName__. All rights reserved.
+//  Copyright (c) 2012 TiBounise. All rights reserved.
 //
 
 #import <Cocoa/Cocoa.h>
