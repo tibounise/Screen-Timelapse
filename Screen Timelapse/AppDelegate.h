@@ -10,7 +10,8 @@
 
 @interface AppDelegate : NSObject <NSApplicationDelegate> {
     NSUserDefaults *prefs;
-    NSTimer *timelapseTimer;
+    NSTimer *timer;
+    NSDockTile *dockBadge;
     int counter;
 }
 
@@ -24,7 +25,10 @@
 - (IBAction)timelapseTrigger:(id)sender;
 @property (assign) IBOutlet NSMenuItem *timelapseMenuitem;
 - (IBAction)resetTimelapse:(id)sender;
+@property (assign) IBOutlet NSButton *dockBadgeSelector;
+- (IBAction)dockBadgeSelectorAct:(id)sender;
 
-
+-(void)startTimer;
+-(void)stopTimer;
 
 @end

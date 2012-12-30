@@ -9,6 +9,7 @@
 #import "AppDelegate.h"
 
 @implementation AppDelegate
+@synthesize dockBadgeSelector;
 @synthesize timelapseMenuitem;
 @synthesize intervalLabel;
 @synthesize sliderInterval;
@@ -27,12 +28,34 @@
     if ([prefs objectForKey:@"Interval"] == nil) {
         [prefs setFloat:1 forKey:@"Interval"];
     }
+    if ([prefs objectForKey:@"ShowBadge"] == nil) {
+        [prefs setBool:YES forKey:@"ShowBadge"];
+    }
     [prefs synchronize];
     [extensionMenu selectItemWithTitle:[prefs objectForKey:@"PicturesFormat"]];
     [sliderInterval setDoubleValue:[prefs floatForKey:@"Interval"]];
     [intervalLabel setStringValue:[NSString stringWithFormat:@"Actual interval : %.f secs",[sliderInterval floatValue]]];
+    [dockBadgeSelector setState:[prefs boolForKey:@"ShowBadge"]];
     counter = 0;
-    timelapseTimer = nil;
+    timer = nil;
+    dockBadge = [[NSApplication sharedApplication] dockTile];
+}
+
+- (IBAction)dockBadgeSelectorAct:(id)sender {
+    [prefs setBool:[dockBadgeSelector state] forKey:@"ShowBadge"];
+    if ([dockBadgeSelector state] == NSOffState) {
+        [dockBadge setBadgeLabel:nil];
+    }
+}
+
+-(void)startTimer {
+    timer = [NSTimer scheduledTimerWithTimeInterval:[prefs floatForKey:@"Interval"] target:self selector:@selector(timelapseRoutine) userInfo:nil repeats:YES];
+    [timelapseMenuitem setTitle:@"Stop timelapse"];
+}
+-(void)stopTimer {
+    [timer invalidate];
+    timer = nil;
+    [timelapseMenuitem setTitle:@"Launch timelapse"];
 }
 
 - (IBAction)choosePath:(id)sender {
@@ -58,13 +81,10 @@
     [prefs synchronize];
 }
 - (IBAction)timelapseTrigger:(id)sender {
-    if (timelapseTimer == nil) {
-        timelapseTimer = [NSTimer scheduledTimerWithTimeInterval:[prefs floatForKey:@"Interval"] target:self selector:@selector(timelapseRoutine) userInfo:nil repeats:YES];
-        [timelapseMenuitem setTitle:@"Stop timelapse"];
+    if (timer == nil) {
+        [self startTimer];
     } else {
-        [timelapseTimer invalidate];
-        timelapseTimer = nil;
-        [timelapseMenuitem setTitle:@"Launch timelapse"];
+        [self stopTimer];
     }
 }
 -(void)timelapseRoutine {
@@ -78,11 +98,12 @@
             [captureTask setArguments: args];
             [captureTask launch];
             [captureTask release];
+            if ([dockBadgeSelector state] == NSOnState) {
+                [dockBadge setBadgeLabel:[NSString stringWithFormat:@"%d", counter]];
+            }
             counter++;
         } else {
-            [timelapseTimer invalidate];
-            timelapseTimer = nil;
-            [timelapseMenuitem setTitle:@"Launch timelapse"];
+            [self stopTimer];
             NSAlert *alert = [[NSAlert alloc] init];
             [alert addButtonWithTitle:@"Close"];
             [alert setMessageText:@"An error has occured"];
@@ -91,9 +112,7 @@
             [alert runModal];
         }
     } else {
-        [timelapseTimer invalidate];
-        timelapseTimer = nil;
-        [timelapseMenuitem setTitle:@"Launch timelapse"];
+        [self stopTimer];
         NSAlert *alert = [[NSAlert alloc] init];
         [alert addButtonWithTitle:@"Close"];
         [alert setMessageText:@"An error has occured"];
