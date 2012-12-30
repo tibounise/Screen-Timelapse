@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DC3A47C81690ABE30004E3FA /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = DC3A47C71690ABE30004E3FA /* README.md */; };
 		DC4AA09B16905EE500B13F33 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC4AA09A16905EE400B13F33 /* Cocoa.framework */; };
 		DC4AA0A516905EE500B13F33 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DC4AA0A316905EE500B13F33 /* InfoPlist.strings */; };
 		DC4AA0A716905EE500B13F33 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DC4AA0A616905EE500B13F33 /* main.m */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		DC3A47C71690ABE30004E3FA /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
 		DC4AA09616905EE400B13F33 /* Screen Timelapse.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Screen Timelapse.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC4AA09A16905EE400B13F33 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		DC4AA09D16905EE500B13F33 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -48,6 +50,7 @@
 		DC4AA08B16905EE400B13F33 = {
 			isa = PBXGroup;
 			children = (
+				DC3A47C71690ABE30004E3FA /* README.md */,
 				DC4AA0B716909EB700B13F33 /* 1356905357_18222.icns */,
 				DC4AA0A016905EE500B13F33 /* Screen Timelapse */,
 				DC4AA09916905EE400B13F33 /* Frameworks */,
@@ -159,6 +162,7 @@
 				DC4AA0AB16905EE500B13F33 /* Credits.rtf in Resources */,
 				DC4AA0B116905EE500B13F33 /* MainMenu.xib in Resources */,
 				DC4AA0B816909EB700B13F33 /* 1356905357_18222.icns in Resources */,
+				DC3A47C81690ABE30004E3FA /* README.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -290,6 +294,7 @@
 				DC4AA0B616905EE500B13F33 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
